@@ -52,6 +52,6 @@ ALL POSSIBLE TRADES HAVE BEEN EXECUTED...
 
 ## Planned Improvements
 * **Order Cancellations/Modifications** -> I want to add functions that allow users to cancel orders or modify an order.
-* **CLI Interaction** -> I would also add functions that llow users to interact with the terminal and add or manipulate  orders.
+* **CLI Interaction** -> I would also add functions that allow users to interact with the terminal and add or manipulate  orders.
 
   
