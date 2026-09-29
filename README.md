@@ -15,7 +15,7 @@ I built it to practice how to write low latency code, prevent duplications in me
 
 ---
 
-## Data Structures Used
+## Data Structures and Algorithms Used
 * `std::vector` -> It was used to create separate lists for both buyers and sellers
 * `std::sort`-> It was used to arrange the buyers and sellers list according to the best prices
 * `std::min` -> It was used to to compare the quantities and ensure the right amount of quantities were sold so not to exceed an individuals requested quantity.
