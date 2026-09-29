@@ -11,7 +11,7 @@ I built it to practice how to write low latency code, prevent duplications in me
 * **Request Lists** -> It Stores buy/sell requests in lists and sorts them based on who has the lowest selling price or highest buying price.
 * **Price Time Priority** -> It Ensures the best and earliest orders are attended to first.
 * **Add Orders** -> It Allows the user add a buyer or seller to the market, goes through every request and finds if there is a matching buyer or seller.
-* **O(1)Tail Removal** -> It Saves the best buyer and seller at the bottom and when their orders have been filled they are removed from the bottom which follows the O(1) time Complexity.
+* **O(1) Tail Removal** -> It Saves the best buyer and seller at the bottom and when their orders have been filled they are removed from the bottom which follows the O(1) time Complexity.
 
 ---
 
@@ -49,5 +49,9 @@ TRADE EXECUTED: 95 shares at $149.5 Buyer ID: 100 | Seller ID: 400
 
 ALL POSSIBLE TRADES HAVE BEEN EXECUTED...
 ```
+
+## Planned Improvements
+* **Order Cancellations/Modifications** -> Allow users to cancel order or modify a buy/sell order.
+* **CLI Interaction** -> Allow users to interact with the terminal and input or remove orders.
 
   
