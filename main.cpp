@@ -42,7 +42,7 @@ public:
             
             int traded_quantity = std::min(best_buy.quantity, best_sell.quantity);
 
-            std::cout<< "TRADE EXECUTED: " << traded_quantity <<" shares at $" <<best_sell.price<< " Buyer ID: " << best_buy.id << " | Seller ID: " << best_sell.id;
+            std::cout<< "TRADE EXECUTED: " << traded_quantity <<" shares at $" <<best_sell.price<< " Buyer ID: " << best_buy.id << " | Seller ID: " << best_sell.id<< std::endl;
 
             best_buy.quantity -= traded_quantity;
             best_sell.quantity -= traded_quantity;
@@ -56,8 +56,10 @@ public:
 
 int main(){
     OrderBook book;
-
-    std::cout << "Market Open....";
+    std::cout << "============================================== " << std::endl;
+    std::cout << "               MARKET OPEN....  " << std::endl;
+    std::cout << "============================================== " << std::endl;
+    std::cout << std::endl;
 
     book.addOrder({100,true,150.00,100}); //buyer willing to pay $150 for 100 shares.
     book.addOrder({200,false,153.00,110}); //seller willing to sell 110 shares for $153
@@ -65,6 +67,7 @@ int main(){
 
     //seller realises buyers arent willing to pay much and lowers her/his price
     book.addOrder({400,false,149.50,95}); 
-
+    std::cout << std::endl;
+    std::cout << "ALL POSSIBLE TRADES HAVE BEEN EXECUTED..." <<std::endl;
     return 0;
 }
